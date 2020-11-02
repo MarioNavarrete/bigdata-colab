@@ -1,7 +1,7 @@
 
 export Fecha=$(date +'%Y%m%d');
 export SalidaProceso=Output_${Fecha};
-RutaUnix= /content/bigdata-colab/mapreduce;
+RutaUnix=/content/bigdata-colab/mapreduce;
 RutaHDFS=/user/root;
 
 hdfs dfs -rm -R /content/${SalidaProceso};
