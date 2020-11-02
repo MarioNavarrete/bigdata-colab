@@ -4,7 +4,6 @@
 import sys 
 
 current_date = None
-date = None
 val_max = -float('inf')
 val_min = float('inf')
 count = 0
@@ -28,11 +27,12 @@ for line in sys.stdin:
             val_min = val
         else:
             pass
-        count + = 1
-        total + = val
+        ##Avg variables
+        count+= 1
+        total+= val
     else: 
         if current_date:
-            avg = total/count
+            avg = total*1.0/count
             print('%s\t%s' % (current_date, val_max, val_min, avg))
         count = 0
         total = 0
@@ -41,5 +41,5 @@ for line in sys.stdin:
         current_date = date
 
 if current_date == date:
-    avg = total/count
+    avg = total*1.0/count
     print('%s\t%s' % (current_date, val_max, val_min, avg))
