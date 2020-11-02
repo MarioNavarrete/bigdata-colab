@@ -1,6 +1,5 @@
 #!/usr/bin/python
 
-##input es (date, humedadsuelo)
 import sys 
 
 current_date = None
@@ -33,7 +32,7 @@ for line in sys.stdin:
     else: 
         if current_date:
             avg = total*1.0/count
-            print('%s\t%s' % (current_date, val_max, val_min, avg))
+            print('%s\t%s\t%s\t%s'% (current_date, val_max, val_min, avg))
         count = 0
         total = 0
         val_min = val
@@ -42,4 +41,4 @@ for line in sys.stdin:
 
 if current_date == date:
     avg = total*1.0/count
-    print('%s\t%s' % (current_date, val_max, val_min, avg))
+    print('%s\t%s\t%s\t%s' % (current_date, val_max, val_min, avg))
