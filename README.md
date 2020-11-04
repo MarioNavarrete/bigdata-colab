@@ -12,4 +12,4 @@ You will be able to use tools like:
 * Hive
 * Spark
 
-Code and statement for some of those tools are very basic due the only goal is to show you how to install and use these tools in Colab.
+Code and statements for some of those tools are very basic due the only goal is to show you how to install and use these tools in Colab.
