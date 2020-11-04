@@ -1,6 +1,5 @@
 
-export Fecha=$(date +'%Y%m%d');
-export SalidaProceso=Output_${Fecha};
+export SalidaProceso=Output_test;
 RutaUnix=/content/bigdata-colab/mapreduce;
 RutaHDFS=/user/root;
 
